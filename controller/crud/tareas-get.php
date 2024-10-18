@@ -4,14 +4,13 @@ ini_set('display_errors', 1);
 session_start();
 include '../../conexion/conexion.php';
 
-// Establece el encabezado para la respuesta JSON
 header('Content-Type: application/json');
+
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if (isset($_GET['id'])) {
         $idTarea = mysqli_real_escape_string($conn, $_GET['id']);
 
-        // Consulta para obtener la tarea
         $sql = "SELECT id, titulo, descripcion, prioridad, estado FROM tareas WHERE id = '$idTarea' LIMIT 1";
         $result = mysqli_query($conn, $sql);
 

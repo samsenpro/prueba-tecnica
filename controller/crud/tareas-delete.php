@@ -5,10 +5,9 @@ ini_set('display_errors', 1);
 session_start();
 include '../../conexion/conexion.php';
 
-// Crear conexión a la base de datos
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Comprobar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }

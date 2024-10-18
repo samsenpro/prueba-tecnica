@@ -2,10 +2,6 @@
 session_start();
 include '../../conexion/conexion.php';
 
-if (!isset($_SESSION['usuario'])) {
-    header('Location: login.php');
-    exit;
-}
 
 $usuario_id = $_SESSION['usuario'];
 

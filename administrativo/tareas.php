@@ -38,7 +38,7 @@ ob_start();
         <i class="fas fa-save"></i>
     </button>
 
-    <button type="button" class="btn btn-primary" onclick="cargarTareas()" style="color: white;" title="Buscar Tarea" data-bs-toggle="modal" data-bs-target="#tareaModal">
+    <button type="button" class="btn btn-primary" onclick="cargarTareasCrud()" style="color: white;" title="Buscar Tarea" data-bs-toggle="modal" data-bs-target="#tareaModal">
         <i class="fas fa-search"></i>
     </button>
 

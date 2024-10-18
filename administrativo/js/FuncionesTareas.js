@@ -44,7 +44,7 @@ function guardarTarea() {
 }
 
 
-function cargarTareas() {
+function cargarTareasCrud() {
     fetch('../controller/crud/tareas-list.php')
     .then(response => response.json())
     .then(data => {
@@ -103,7 +103,6 @@ function seleccionarTarea(idTarea) {
         Itm('titulo').value = tarea.titulo || '';
         Itm('descripcion').value = tarea.descripcion || '';
         Itm('prioridad').value = tarea.prioridad || '';
-        Itm('estado').value = tarea.estado || '';
 
         const modal = bootstrap.Modal.getInstance(Itm('tareaModal'));
         modal.hide();

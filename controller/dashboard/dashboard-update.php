@@ -2,6 +2,7 @@
 session_start();
 include '../../conexion/conexion.php';
 
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_SESSION['usuario'])) {
         $data = json_decode(file_get_contents('php://input'), true);
