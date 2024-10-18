@@ -58,6 +58,7 @@ function cargarTareasCrud() {
         <th>Descripción</th>
         <th>Prioridad</th>
         <th>Estado</th>
+        <th>Acciones</th>
     `;
 
     theader.appendChild(rowHead);
