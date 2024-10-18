@@ -84,7 +84,7 @@ ob_start();
             </div>
             <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-danger" id="confirmDeleteBtn">Eliminar</button>
+                <button type="button" class="btn btn-danger" onclick="eliminarTarea()" id="confirmDeleteBtn">Eliminar</button>
             </div>
         </div>
     </div>

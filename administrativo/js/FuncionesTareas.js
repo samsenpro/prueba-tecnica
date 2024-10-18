@@ -135,6 +135,10 @@ function eliminarTarea() {
         if (data.status === 'success') {
             alert('Tarea eliminada exitosamente');
             Itm('tareaForm').reset();
+            
+            // Cerrar el modal correctamente
+            const modal = bootstrap.Modal.getInstance(Itm('confirmDeleteModal'));
+            modal.hide();
         } else {
             alert('Error al eliminar la tarea: ' + data.message);
         }
